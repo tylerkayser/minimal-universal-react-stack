@@ -1,7 +1,7 @@
 {
-  "name": "minimal-react-stack",
-  "version": "0.1.1",
-  "description": "Minimal React Stack with Redux, React-Router v4, Redux-Observable, HMR, Babel, and Webpack",
+  "name": "minimal-universal-react-stack",
+  "version": "0.1.0",
+  "description": "Minimal Universal React Stack with Express, Redux, React-Router v4, Redux-Observable, HMR, Babel, and Webpack",
   "main": "index.js",
   "scripts": {
     "build": "babel-node ./node_modules/webpack/bin/webpack --config webpack.config.js --progress --profile --colors && cp src/index.html dist/index.html",
@@ -37,10 +37,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tylerkayser/minimal-react-stack"
+    "url": "git+https://github.com/tylerkayser/minimal-universal-react-stack"
   },
   "bugs": {
-    "url": "https://github.com/tylerkayser/minimal-react-stack/issues"
+    "url": "https://github.com/tylerkayser/minimal-universal-react-stack/issues"
   },
-  "homepage": "https://github.com/tylerkayser/minimal-react-stack#readme"
+  "homepage": "https://github.com/tylerkayser/minimal-universal-react-stack#readme"
 }
