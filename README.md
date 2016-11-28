@@ -2,6 +2,8 @@
 
 Minimal Universal [React](https://github.com/facebook/react) Stack with [Express](https://github.com/expressjs/express), [Redux](https://github.com/reactjs/redux), [React-Router v4](https://github.com/ReactTraining/react-router),  [Redux-Observable](https://github.com/redux-observable/redux-observable), HMR, [Babel](https://github.com/babel/babel), and [Webpack](https://github.com/webpack/webpack).
 
+## Do not use yet!  This repo is under construction.
+
 ## Installation
 Install the global npm dependencies
 
