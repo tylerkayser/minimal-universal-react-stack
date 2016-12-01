@@ -30,7 +30,12 @@ export default {
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'BABEL_ENV': `'${process.env.BABEL_ENV}'`
+      }
+    })
   ],
   resolve: {
     extensions: ['', '.js', '.jsx']

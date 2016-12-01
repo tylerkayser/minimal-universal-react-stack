@@ -9,8 +9,7 @@ import webpackHotMiddleware from 'webpack-hot-middleware'
 const compiler = webpack(webpackConfig)
 const app = express()
   .use(webpackDevMiddleware(compiler, {
-    // contentBase: config.paths.dist,
-    contentBase: `http://localhost:${config.DEV_PORT}`,
+    contentBase: config.paths.dist,
     headers: {'Access-Control-Allow-Origin': '*'},
     historyApiFallback: true,
     host: 'localhost',

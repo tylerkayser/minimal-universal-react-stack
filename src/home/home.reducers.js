@@ -1,7 +1,9 @@
 import { PING, PONG } from './home.actions'
 
 function homeReducers(state = {}, action) {
-  console.log(state, action)
+  if (!process.env || process.env.BABEL_ENV !== 'node') {
+    console.log(state, action)
+  }
   switch(action.type) {
     case PING:
       return {
