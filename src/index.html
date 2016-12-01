@@ -2,10 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>React</title>
+    <title>Universal React</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="text/javascript" src="app.js"></script>
+    <div id="root">${html}</div>
+    <div id="dev-tools"></div>
+    <script>
+      window.__PRELOADED_STATE__ = ${preloadedState}
+    </script>
+    <script src="/app.js"></script>
   </body>
 </html>

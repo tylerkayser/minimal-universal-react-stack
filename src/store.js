@@ -1,4 +1,4 @@
-import DevTools from './common/dev-tools';
+import DevTools from './common/dev-tools'
 import epics from './epics'
 import reducers from './reducers'
 import { applyMiddleware, combineReducers, createStore } from 'redux'

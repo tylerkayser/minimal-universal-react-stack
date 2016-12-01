@@ -2,19 +2,11 @@ import config from './config'
 import webpack from 'webpack'
 
 export default {
-  devServer: {
-    contentBase: config.paths.dist,
-    historyApiFallback: true,
-    host: '127.0.0.1',
-    hot: true,
-    inline: true,
-    noInfo: true,
-    port: 3000
-  },
   devtool: 'eval',
   entry: [
     'react-hot-loader/patch',
-    `${config.paths.src}/index.jsx`
+    `webpack-hot-middleware/client?http://localhost:${config.DEV_PORT}/__webpack_hmr`,
+    `${config.paths.src}/app.jsx`
   ],
   module: {
     loaders: [
@@ -36,7 +28,9 @@ export default {
     publicPath: '/'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
   ],
   resolve: {
     extensions: ['', '.js', '.jsx']

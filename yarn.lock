@@ -35,6 +35,10 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+ansi-html@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/ansi-html/-/ansi-html-0.0.6.tgz#bda8e33dd2ee1c20f54c08eb405713cbfc0ed80e"
+
 ansi-regex@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.0.0.tgz#c5061b6e0ef8a81775e50f5d66151bf6bf371107"
@@ -711,6 +715,10 @@ babel-plugin-transform-regenerator@^6.16.0:
     babel-types "^6.16.0"
     private "~0.1.5"
 
+babel-plugin-transform-require-ignore:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-require-ignore/-/babel-plugin-transform-require-ignore-0.0.2.tgz#b5ac24ed555114bc8b5d70a0d057d40eb5c662bf"
+
 babel-plugin-transform-runtime@^6.7.5:
   version "6.15.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-runtime/-/babel-plugin-transform-runtime-6.15.0.tgz#3d75b4d949ad81af157570273846fb59aeb0d57c"
@@ -961,6 +969,10 @@ builtin-modules@^1.0.0:
 bytes@2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-2.3.0.tgz#d5b680a165b6201739acb611542aabc2d8ceb070"
+
+bytes@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/bytes/-/bytes-2.4.0.tgz#7d97196f9d5baf7f6935e25985549edd2a6c2339"
 
 camelcase-keys@^2.0.0:
   version "2.1.0"
@@ -1434,6 +1446,10 @@ es6-iterator@2:
     es5-ext "^0.10.7"
     es6-symbol "3"
 
+es6-promise@^3.2.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-3.3.1.tgz#a08cdde84ccdbf34d027a1451bc91d4bcd28a613"
+
 es6-symbol@^3.0.2, es6-symbol@~3.1, es6-symbol@3:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/es6-symbol/-/es6-symbol-3.1.0.tgz#94481c655e7a7cad82eba832d97d5433496d7ffa"
@@ -1487,7 +1503,14 @@ expand-range@^1.8.1:
   dependencies:
     fill-range "^2.1.0"
 
-express@^4.13.3:
+express-http-proxy:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/express-http-proxy/-/express-http-proxy-0.10.1.tgz#dff83794a8ec11db0e7d9448e6ce1ca6278b3dd7"
+  dependencies:
+    es6-promise "^3.2.1"
+    raw-body "^2.1.7"
+
+express@^4.13.3, express@^4.14.0:
   version "4.14.0"
   resolved "https://registry.yarnpkg.com/express/-/express-4.14.0.tgz#c1ee3f42cdc891fb3dc650a8922d51ec847d0d66"
   dependencies:
@@ -1846,6 +1869,10 @@ html-comment-regex@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/html-comment-regex/-/html-comment-regex-1.1.1.tgz#668b93776eaae55ebde8f3ad464b307a4963625e"
 
+html-entities@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.0.tgz#41948caf85ce82fed36e4e6a0ed371a6664379e2"
+
 http-browserify@^1.3.2:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/http-browserify/-/http-browserify-1.7.0.tgz#33795ade72df88acfbfd36773cefeda764735b20"
@@ -1893,7 +1920,7 @@ husl@>=5.0:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/husl/-/husl-6.0.1.tgz#c6a9f2edea1fc24c00ccb565903bccf37cf3cc58"
 
-iconv-lite@~0.4.13:
+iconv-lite@~0.4.13, iconv-lite@0.4.13:
   version "0.4.13"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.13.tgz#1f88aba4ab0b1508e8312acc39345f36e992e2f2"
 
@@ -3065,7 +3092,7 @@ querystring-es3@~0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/querystring-es3/-/querystring-es3-0.2.1.tgz#9ec61f79049875707d69414596fd907a4d711e73"
 
-querystring@0.2.0:
+querystring@^0.2.0, querystring@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
 
@@ -3083,6 +3110,14 @@ randomatic@^1.1.3:
 range-parser@^1.0.3, range-parser@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
+
+raw-body@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.1.7.tgz#adfeace2e4fb3098058014d08c072dcc59758774"
+  dependencies:
+    bytes "2.4.0"
+    iconv-lite "0.4.13"
+    unpipe "1.0.0"
 
 rc@~1.1.6:
   version "1.1.6"
@@ -3815,7 +3850,7 @@ uniqs@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/uniqs/-/uniqs-2.0.0.tgz#ffede4b36b25290696e6e165d4a59edb998e6b02"
 
-unpipe@~1.0.0:
+unpipe@~1.0.0, unpipe@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
 
@@ -3930,7 +3965,7 @@ webpack-core@~0.6.0:
     source-list-map "~0.1.0"
     source-map "~0.4.1"
 
-webpack-dev-middleware@^1.4.0:
+webpack-dev-middleware, webpack-dev-middleware@^1.4.0:
   version "1.8.4"
   resolved "https://registry.yarnpkg.com/webpack-dev-middleware/-/webpack-dev-middleware-1.8.4.tgz#e8765c9122887ce9e3abd4cc9c3eb31b61e0948d"
   dependencies:
@@ -3956,6 +3991,15 @@ webpack-dev-server:
     strip-ansi "^3.0.0"
     supports-color "^3.1.1"
     webpack-dev-middleware "^1.4.0"
+
+webpack-hot-middleware:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/webpack-hot-middleware/-/webpack-hot-middleware-2.13.2.tgz#6500b15e6d4f1a9590f8df708183f4d2ac2c3e9e"
+  dependencies:
+    ansi-html "0.0.6"
+    html-entities "^1.2.0"
+    querystring "^0.2.0"
+    strip-ansi "^3.0.0"
 
 websocket-driver@>=0.5.1:
   version "0.6.5"

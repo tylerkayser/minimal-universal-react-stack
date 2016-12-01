@@ -1,4 +1,16 @@
 {
+  "env": {
+    "node": {
+      "plugins": [
+        [
+          "babel-plugin-transform-require-ignore",
+          {
+            "extensions": [".sass", ".scss"]
+          }
+        ]
+      ]
+    }
+  },
   "presets": ["es2015", "stage-0", "react"],
   "plugins": ["react-hot-loader/babel"]
 }
